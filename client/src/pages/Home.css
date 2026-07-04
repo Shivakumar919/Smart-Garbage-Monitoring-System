@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+
+.home{
+    background:#f4fdf7;
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    min-height:90vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px;
+    background:
+    linear-gradient(135deg,#0f5132,#198754);
+
+    color:white;
+
+}
+
+
+.hero-content{
+    max-width:550px;
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+
+.hero-content p{
+
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+
+
+.hero-buttons{
+
+    margin-top:30px;
+
+}
+
+
+button{
+
+    padding:13px 30px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#198754;
+    font-weight:bold;
+    cursor:pointer;
+    margin-right:15px;
+
+}
+
+
+.outline{
+
+    background:transparent;
+    color:white;
+    border:2px solid white;
+
+}
+
+
+
+/* Status Card */
+
+
+.hero-card{
+
+    width:330px;
+    padding:30px;
+    border-radius:25px;
+
+    background:white;
+    color:#333;
+
+    box-shadow:
+    0 20px 40px #0004;
+
+}
+
+
+.status{
+
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+
+}
+
+
+.progress{
+
+    height:15px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+
+}
+
+
+.progress div{
+
+    height:100%;
+    width:75%;
+    background:#198754;
+
+}
+
+
+
+/* Features */
+
+
+.features{
+
+    padding:70px;
+
+    text-align:center;
+
+}
+
+
+.features h2,
+.working h2{
+
+    font-size:35px;
+    margin-bottom:40px;
+
+}
+
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+.feature-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px #0002;
+
+
+    transition:.3s;
+
+}
+
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+/* Working */
+
+
+.working{
+
+    padding:70px;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+.steps{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+}
+
+
+.steps div{
+
+    width:250px;
+
+    padding:25px;
+
+    background:#e8f7ef;
+
+    border-radius:20px;
+
+}
+
+
+.steps h1{
+
+    color:#198754;
+
+}
+
+
+
+
+
+footer{
+
+    background:#0f5132;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:768px){
+
+
+.hero{
+
+    flex-direction:column;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+
+.hero-content h1{
+
+    font-size:38px;
+
+}
+
+
+.hero-card{
+
+    margin-top:40px;
+
+}
+
+
+.steps{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+}
