@@ -1,7 +1,7 @@
 import "./Home.css";
-import { useNavigate } from "react-router-dom";
+
 function Home() {
-const navigate = useNavigate();
+
   return (
 
     <div className="home">
@@ -33,57 +33,79 @@ const navigate = useNavigate();
 
         <div className="auth-buttons">
 
-       <button 
-  className="login"
-  onClick={() => navigate("/admin/login")}
->
-  Admin Login
-</button>
+          <button className="login">
+            Admin Login
+          </button>
 
+          <button className="login">
+            User Login
+          </button>
 
-<button 
-  className="login"
-  onClick={() => navigate("/user/login")}
->
-  User Login
-</button>
+          <button className="signup">
+            Signup
+          </button>
 
-
-<button
-  className="signup"
-  onClick={() => navigate("/signup")}
->
-  Signup
-</button>
         </div>
 
       </nav>
+
+
+
+
+
       {/* HERO SECTION */}
+
+
       <section className="hero">
+
+
         <div className="hero-content">
+
           <h1>
             Smart Garbage Monitoring System
           </h1>
+
+
           <p>
             IoT based smart waste management system using ESP32
             sensors to monitor garbage levels, harmful gases and
             optimize waste collection routes.
           </p>
+
+
           <button className="primary-btn">
+
             View Dashboard
+
           </button>
+
         </div>
+
+
+
+
+
         <div className="hero-card">
+
+
           <h2>
             Live Bin Status
           </h2>
+
+
           <div className="status">
+
             🗑 Garbage Level
+
             <span>
               75%
             </span>
+
           </div>
+
+
           <div className="status">
+
             🌫 Air Quality
 
             <span>

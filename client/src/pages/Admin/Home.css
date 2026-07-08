@@ -106,7 +106,6 @@
 
 
 .signup{
-    
 
     background:#16a34a;
 
@@ -297,52 +296,5 @@
 
 }
 
-
-}
-.auth-buttons button,
-.primary-btn {
-
-    transition: 
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease;
-
-}
-
-
-/* Login Button Hover */
-
-.login:hover {
-
-    background:#16a34a;
-
-    color:white;
-
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 8px 20px rgba(22,163,74,0.3);
-
-}
-
-
-/* Signup Button Hover */
-
-.signup:hover,
-.primary-btn:hover {
-
-    background:#15803d;
-
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 10px 25px rgba(22,163,74,0.4);
-}
-
-/* Click effect */
-
-button:active {
-
-    transform:scale(0.95);
 
 }
