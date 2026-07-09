@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
 
@@ -199,24 +200,17 @@ function Login() {
 
 
 
-          <button
-
+          <Link to="../../pages/Admin/Home.jsx"
             style={styles.button}
-
             onMouseOver={(e)=>
               e.target.style.transform="translateY(-3px)"
             }
-
             onMouseOut={(e)=>
               e.target.style.transform="translateY(0)"
             }
-
           >
-
             Login as {role}
-
-
-          </button>
+          </Link>
 
 
 
