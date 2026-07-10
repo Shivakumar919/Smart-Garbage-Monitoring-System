@@ -84,16 +84,20 @@ function Login() {
     },
 
 
-    button:{
-      padding:"15px",
-      border:"none",
-      borderRadius:"30px",
-      background:"#16a34a",
-      color:"white",
-      fontSize:"17px",
-      cursor:"pointer",
-      transition:"0.3s"
-    },
+    button: {
+    padding: "15px 35px",
+    border: "none",
+    borderRadius: "30px",
+    background: "#16a34a",
+    color: "white",
+    fontSize: "17px",
+    fontWeight: "600",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+    textDecoration: "none",
+    display: "inline-block",
+    textAlign: "center",
+  },
 
 
     text:{
@@ -199,23 +203,20 @@ function Login() {
 
 
 
-
-          <Link to="../../pages/Admin/Home.jsx"
-            style={styles.button}
-            onMouseOver={(e)=>
-              e.target.style.transform="translateY(-3px)"
-            }
-            onMouseOut={(e)=>
-              e.target.style.transform="translateY(0)"
-            }
-          >
-            Login as {role}
-          </Link>
-
-
-
-
-
+<Link
+   to={role === "Admin" ? "/admin" : "/user"}
+  style={styles.button}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.transform = "translateY(-3px)";
+    e.currentTarget.style.boxShadow = "0 8px 20px rgba(22,163,74,0.4)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "none";
+  }}
+>
+  Login as {role}
+</Link>
           <p style={styles.text}>
 
             Don't have an account?

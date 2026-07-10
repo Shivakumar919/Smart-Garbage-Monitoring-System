@@ -2,9 +2,10 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Login from "./pages/Admin/Login";
+import Admin from "./pages/Admin/Home";
+import User from "./pages/User/Home"
 import Signup from "./pages/signup/signup";
-import HomeAdmin from "./pages/Admin/Home"
+import Login from "./pages/Login"
 
 
 function App() {
@@ -19,38 +20,21 @@ function App() {
           path="/" 
           element={<Home />} 
         />
-
-
         <Route 
-          path="/login" 
-          element={<Login />} 
+          path="/admin" 
+          element={<Admin />} 
         />
-
-
+        <Route 
+          path="/user" 
+          element={<User />} 
+        />
+        <Route path="/login"
+        element={<Login/>}/>
         <Route 
           path="/signup" 
           element={<Signup />} 
         />
-        <Route 
-          path="/adminhome" 
-          element={<HomeAdmin />} 
-        />
-
-
-        <Route 
-          path="/admin/login" 
-          element={<Login />} 
-        />
-
-
-        <Route 
-          path="/user/login" 
-          element={<Login />} 
-        />
-
-
       </Routes>
-
     </BrowserRouter>
 
   );
