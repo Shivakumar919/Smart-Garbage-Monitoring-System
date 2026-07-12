@@ -1,13 +1,15 @@
 import "./home.css";
+import Footer from "./Footer"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 
 function Home() {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="home">
+    <>    <div className="home">
 
       {/* Navbar */}
       <nav className="navbar">
@@ -76,31 +78,7 @@ function Home() {
         </div>
 
 
-        <div className="hero-card">
-
-          <h2>Live Bin Status</h2>
-
-          <div className="status">
-            🗑 Garbage Level
-            <span>75%</span>
-          </div>
-
-          <div className="status">
-            🌫 Air Quality
-            <span>Normal</span>
-          </div>
-
-          <div className="status">
-            📍 Location
-            <span>Zone A</span>
-          </div>
-
-          <div className="status">
-            🔋 Device
-            <span>Online</span>
-          </div>
-
-        </div>
+    
 
       </section>
 
@@ -155,7 +133,11 @@ function Home() {
 
       </section>
 
-    </div>
+    </div>   
+     <Footer/> </>
+
+
+
   );
 }
 
